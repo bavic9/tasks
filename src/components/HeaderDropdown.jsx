@@ -29,7 +29,7 @@ function HeaderDropdown({ setOpenDropdown, setBoardModalOpen }) {
  
 
   return (
-    <div className=' py-10 px-6 absolute left-0 right-0 bottom-[-100vh] top-16 dark:bg-gray-500'
+    <div className=' py-10 px-6 absolute left-0 right-0 bottom-[-100vh] top-16 dark:bg-[#00000080]'
     onClick={
         (e) => {
             if (e.target !== e.currentTarget){
