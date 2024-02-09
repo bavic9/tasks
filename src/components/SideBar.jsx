@@ -29,12 +29,12 @@ function SideBar({setIsSideBarOpen, isSideBarOpen}) {
 
   return (
     <div 
-    className={isSideBarOpen ? 'min-w-[261px] bg-white dark:bg-[#2b2c37] fixed top-[42px] pt-10 h-screen items-center left-0 z-20' 
+    className={isSideBarOpen ? 'h-[100vh] min-w-[261px] bg-white dark:bg-[#2b2c37] fixed top-[42px] pt-10 h-screen items-center left-0 z-20' 
     : 'bg-[#635fc7] dark:bg-[#2b2c37] dark:hover:bg-[#635fc7] top-auto bottom-10 justify-center items-center hover:opacity-80 cursor-pointer p-0 transition duration-300 transform fixed w-[56px] h-[48px] rounded-r-full'}
     >
       {
         isSideBarOpen && (
-          <div className='bg-white dark:bg-[#2b2c37] w-full py-4 rounded-xl'>
+          <div className='bg-white dark:bg-[#2b2c37] w-full pt-4 rounded-xl'>
             <h3 className='dark:text-gray-300 text-gray-600 font-semibold mx-4 mb-8'>
               ALL BOARDS ({boards?.length})
             </h3>
@@ -96,7 +96,7 @@ function SideBar({setIsSideBarOpen, isSideBarOpen}) {
       {isSideBarOpen ? (
         <div
           onClick={() => setIsSideBarOpen(state => !state)}
-          className=" flex  items-center mt-2  absolute bottom-16  text-lg font-bold  rounded-r-full hover:text-[#635FC7] cursor-pointer mr-6 mb-8 px-8 py-4 hover:bg-[#635fc71a] dark:hover:bg-white  space-x-2 justify-center  my-4 text-gray-500 "
+          className=" flex  items-center absolute text-lg font-bold  rounded-r-full hover:text-[#635FC7] cursor-pointer mr-6 mb-8 px-8 py-4 hover:bg-[#635fc71a] dark:hover:bg-white  space-x-2 justify-center  my-4 text-gray-500 "
         >
           <img
             className=" min-w-[20px]"
